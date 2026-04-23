@@ -1,4 +1,5 @@
 **Free Translator Chatbot**
+
 A free, lightweight translation chatbot built with Streamlit and Google Translator. Supports 12 languages with automatic source detection.
 
 **Features**
