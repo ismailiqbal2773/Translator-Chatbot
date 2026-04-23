@@ -20,11 +20,13 @@ Select target language from dropdown
 Click Translate
 
 **Project Structure**
+
 translator-chatbot/
 ├── translator_chatbot.py   # Main app
 ├── requirements.txt        # Dependencies
 └── README.md
-☁️ Deploy
+
+**Deploy**
 Deploy for free on Streamlit Cloud:
 
 Connect your GitHub repo → Select translator_chatbot.py → Deploy
