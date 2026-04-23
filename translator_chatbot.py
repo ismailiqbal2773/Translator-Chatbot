@@ -11,7 +11,7 @@ LANGUAGES = {
     "French": "fr",
     "German": "de",
     "Spanish": "es",
-    "Chinese": "zh-cnst",
+    "Chinese": "zh",
     "Arabic": "ar",
     "Hindi": "hi",
     "Turkish": "tr",
