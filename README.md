@@ -3,12 +3,15 @@
 A free, lightweight translation chatbot built with Streamlit and Google Translator. Supports 12 languages with automatic source detection.
 
 **Features**
+
 Auto-detects source language
 Supports 12 languages (English, Urdu, French, German, Spanish, Chinese, Arabic, Hindi, Turkish, Russian, Japanese, Korean)
 Clean minimal UI
 No API keys required — 100% free
+
 **Quick Start**
 git clone https://github.com/YOUR_USERNAME/translator-chatbot.gitcd translator-chatbotpip install -r requirements.txtstreamlit run translator_chatbot.py
+
 **App opens** at http://localhost:8501
 
 **How to Use**
