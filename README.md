@@ -26,7 +26,9 @@ Follow these steps to set up the project locally.
 
 **Clone the repository**
 
-git clone https://github.com/ismailiqbal2773/Translator-Chatbot.gitcd Translator-Chatbot
+git clone https://github.com/ismailiqbal2773/Translator-Chatbot.git
+
+cd Translator-Chatbot
 
 **Install dependencies**
 
