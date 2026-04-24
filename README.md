@@ -1,43 +1,42 @@
 **Free Translator Chatbot**
 
-A free, lightweight translation chatbot built with Streamlit and Google Translator. Supports 12 languages with automatic source detection.
+A lightweight translation chatbot built with Streamlit and Google Translator. This application provides a clean user interface for translating text between 12 different languages without requiring any paid API keys.
 
 **Features**
 
-Auto-detects source language
-Supports 12 languages (English, Urdu, French, German, Spanish, Chinese, Arabic, Hindi, Turkish, Russian, Japanese, Korean)
-Clean minimal UI
-No API keys required — 100% free
+Auto Detection: Automatically detects the source language of the input text.
+Multi-Language Support: Supports 12 languages including English, Urdu, French, German, Spanish, Chinese, Arabic, Hindi, Turkish, Russian, Japanese, and Korean.
+No API Keys: Uses free translation libraries; no setup or paid keys required.
+Minimal UI: Clean and distraction-free user interface built with Streamlit.
 
-**Quick Start**
+**Tech Stack**
 
-git clone https://github.com/ismailiqbal2773/Translator-Chatbot.git
+Frontend: Streamlit
+Backend: Python
+Translation Engine: Google Translator (via deep_translator library)
+Installation
+Follow these steps to set up the project locally.
 
-cd translator-chatbotpip install -r requirements.txt
+Clone the repository
+git clone https://github.com/ismailiqbal2773/Translator-Chatbot.gitcd Translator-Chatbot
+Install dependencies
+bash
+
+pip install -r requirements.txt
+Run the application
+bash
 
 streamlit run translator_chatbot.py
-
-**App opens** at http://localhost:8501
-
-**How to Use**
-Paste your text in the text area
-Select target language from dropdown
-Click Translate
-
-**Project Structure**
+Usage
+Enter or paste the text you want to translate in the input field.
+Select the target language from the dropdown menu.
+Click the Translate button to view the result.
+Project Structure
+text
 
 translator-chatbot/
-
-├── translator_chatbot.py   # Main app
-
-├── requirements.txt        # Dependencies
-
-└── README.md
-
-**Deploy**
-Deploy for free on Streamlit Cloud:
-
-Connect your GitHub repo → Select translator_chatbot.py → Deploy
-
-📄 License
-MIT License — free to use, modify, and distribute.
+├── translator_chatbot.py   # Main application script
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+License
+This project is licensed under the MIT License.
