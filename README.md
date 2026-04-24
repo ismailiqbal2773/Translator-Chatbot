@@ -10,7 +10,12 @@ Clean minimal UI
 No API keys required — 100% free
 
 **Quick Start**
-git clone https://github.com/YOUR_USERNAME/translator-chatbot.gitcd translator-chatbotpip install -r requirements.txtstreamlit run translator_chatbot.py
+
+git clone https://github.com/ismailiqbal2773/Translator-Chatbot.git
+
+cd translator-chatbotpip install -r requirements.txt
+
+streamlit run translator_chatbot.py
 
 **App opens** at http://localhost:8501
 
