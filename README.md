@@ -1,61 +1,53 @@
-**Free Translator Chatbot**
+# Free Translator Chatbot
 
-A lightweight translation chatbot built with Streamlit and Google Translator. This application provides a clean user interface for translating text between 12 different languages without requiring any paid API keys.
+A lightweight translation chatbot built with Streamlit and `deep-translator`.
+It supports 12 target languages without a paid API key.
 
-**Features**
+## Features
 
-Auto Detection: Automatically detects the source language of the input text.
+- Explicit source-language selection for dependable fallback behavior
+- Google Translator with automatic MyMemory fallback
+- Friendly errors without raw provider exception details
+- Last successful result retained during normal Streamlit reruns
+- Input validation up to 5,000 characters
 
-Multi-Language Support: Supports 12 languages including English, Urdu, French, German, Spanish, Chinese, Arabic, Hindi, Turkish, Russian, Japanese, and Korean.
+## Supported target languages
 
-No API Keys: Uses free translation libraries; no setup or paid keys required.
+English, Urdu, French, German, Spanish, Chinese, Arabic, Hindi, Turkish,
+Russian, Japanese and Korean.
 
-Minimal UI: Clean and distraction-free user interface built with Streamlit.
+## Installation
 
-**Tech Stack**
-
-Frontend: Streamlit
-
-Backend: Python
-
-Translation Engine: Google Translator (via deep_translator library)
-
-**Installation**
-
-Follow these steps to set up the project locally.
-
-**Clone the repository**
-
-git clone https://github.com/ismailiqbal2773/Translator-Chatbot.git
-
-cd Translator-Chatbot
-
-**Install dependencies**
-
+```bash
 pip install -r requirements.txt
-
-**Run the application**
-
 streamlit run translator_chatbot.py
+```
 
-**Usage**
+## Tests
 
-Enter or paste the text you want to translate in the input field.
+```bash
+pip install pytest
+pytest -q test_translation_service.py test_app.py
+```
 
-Select the target language from the dropdown menu.
+## Project structure
 
-Click the Translate button to view the result.
+- `translator_chatbot.py` - Streamlit user interface
+- `translation_service.py` - validation and provider fallback logic
+- `test_translation_service.py` - automated tests
+- `requirements.txt` - runtime dependencies
 
-**Project Structure**
+The project uses third-party translation services through the MIT-licensed
+`deep-translator` package. Provider availability and translation quality can vary.
+Text leaves this app: it is sent to Google, and on failure to MyMemory. Do not enter
+confidential school, student, staff or customer information. MyMemory fallback is
+limited to 500 UTF-8 bytes per request; longer input is not forwarded to it.
+Source language must now be selected explicitly; the fallback API rejects `auto`.
+The last successful result stays labelled with its original language after reruns.
 
-translator-chatbot/
+References: [deep-translator](https://github.com/nidhaloff/deep-translator)
+and [MyMemory API limits](https://mymemory.translated.net/doc/spec.php).
+No upstream source code was copied or relicensed. This repository has no LICENSE
+file; the dependency's MIT license does not license this project's own code.
 
-├── translator_chatbot.py   # Main application script
-
-├── requirements.txt        # Project dependencies
-
-└── README.md               # Project documentation
-
-Muhammad Ismail
-
-
+Created by Muhammad Ismail.
